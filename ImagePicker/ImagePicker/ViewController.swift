@@ -9,10 +9,14 @@
 import UIKit
 
 class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    
+    let imagePicker = UIImagePickerController()
+    let cameraOverlay = CameraOverlay()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        imagePicker.delegate = self
     }
 
     override func didReceiveMemoryWarning() {
@@ -26,12 +30,14 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         imagePicker.sourceType = .camera
         imagePicker.delegate = self
         imagePicker.allowsEditing = true
+        imagePicker.showsCameraControls = false
+        imagePicker.cameraOverlayView = cameraOverlay
+        cameraOverlay.isHidden = false
         
         present(imagePicker, animated: true, completion: nil)
     }
     
     func choosePhotoFromPhotoLibrary() {
-        let imagePicker = UIImagePickerController()
         
         imagePicker.sourceType = .photoLibrary
         imagePicker.delegate = self
@@ -59,4 +65,3 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         dismiss(animated: true, completion: nil)
     }
 }
-

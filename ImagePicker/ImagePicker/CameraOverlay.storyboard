@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="NZK-B3-pFe">
+            <objects>
+                <viewController id="F2A-jB-Wxz" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zBa-qe-AOm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CBq-FX-grw" customClass="CameraOverlay" customModule="ImagePicker" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="375"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="boH-F0-MaA">
+                                        <rect key="frame" x="21" y="237.5" width="244" height="39"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Smaller label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iXM-A1-naK">
+                                        <rect key="frame" x="21" y="277" width="226" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.56536154072864431" blue="0.89837444311621029" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="boH-F0-MaA" secondAttribute="trailing" constant="110" id="ELv-Cs-jzW"/>
+                                    <constraint firstItem="iXM-A1-naK" firstAttribute="top" secondItem="boH-F0-MaA" secondAttribute="bottom" constant="1" id="Gq3-nD-9AU"/>
+                                    <constraint firstItem="boH-F0-MaA" firstAttribute="leading" secondItem="CBq-FX-grw" secondAttribute="leading" constant="21" id="RCx-Ex-1qe"/>
+                                    <constraint firstAttribute="trailing" secondItem="iXM-A1-naK" secondAttribute="trailing" constant="128" id="WSp-Hs-fZQ"/>
+                                    <constraint firstItem="iXM-A1-naK" firstAttribute="leading" secondItem="CBq-FX-grw" secondAttribute="leading" constant="21" id="aYh-OH-onv"/>
+                                    <constraint firstAttribute="bottom" secondItem="iXM-A1-naK" secondAttribute="bottom" constant="77" id="abm-mB-Inj"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="activeMinutesLabel" destination="iXM-A1-naK" id="0Sn-RX-TNN"/>
+                                    <outlet property="cameraButton" destination="qqN-yE-qJi" id="WHR-6b-yit"/>
+                                    <outlet property="hoursMinutesLabel" destination="boH-F0-MaA" id="H27-mg-n3H"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Txr-zf-fzo">
+                                <rect key="frame" x="0.0" y="371" width="375" height="296"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qqN-yE-qJi">
+                                        <rect key="frame" x="157" y="115" width="75" height="67"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button" image="cameraBtn"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="CBq-FX-grw" firstAttribute="trailing" secondItem="Niw-4F-V3R" secondAttribute="trailing" id="CJg-8Y-kNZ"/>
+                            <constraint firstItem="CBq-FX-grw" firstAttribute="leading" secondItem="Niw-4F-V3R" secondAttribute="leading" id="YKx-Jy-Hig"/>
+                            <constraint firstItem="CBq-FX-grw" firstAttribute="top" secondItem="zBa-qe-AOm" secondAttribute="top" id="bC1-n3-1my"/>
+                            <constraint firstItem="Niw-4F-V3R" firstAttribute="bottom" secondItem="CBq-FX-grw" secondAttribute="bottom" constant="292" id="xMJ-fe-vWK"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Niw-4F-V3R"/>
+                    </view>
+                    <connections>
+                        <outlet property="cameraButton" destination="qqN-yE-qJi" id="fs7-wD-Qb6"/>
+                        <outlet property="cameraOverlay" destination="zBa-qe-AOm" id="8qI-cK-hE3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mBu-05-pth" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-71.200000000000003" y="151.57421289355324"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cameraBtn" width="67" height="67"/>
+    </resources>
+</document>

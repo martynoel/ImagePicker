@@ -12,6 +12,8 @@
 		3969EC4E1FEC3D3C00E2C037 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3969EC4C1FEC3D3C00E2C037 /* Main.storyboard */; };
 		3969EC501FEC3D3C00E2C037 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3969EC4F1FEC3D3C00E2C037 /* Assets.xcassets */; };
 		3969EC531FEC3D3C00E2C037 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3969EC511FEC3D3C00E2C037 /* LaunchScreen.storyboard */; };
+		3969EC5B1FEC5D5A00E2C037 /* CameraOverlay.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3969EC5A1FEC5D5A00E2C037 /* CameraOverlay.storyboard */; };
+		3969EC5D1FEC749100E2C037 /* CameraOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3969EC5C1FEC749100E2C037 /* CameraOverlay.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		3969EC4F1FEC3D3C00E2C037 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3969EC521FEC3D3C00E2C037 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3969EC541FEC3D3C00E2C037 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3969EC5A1FEC5D5A00E2C037 /* CameraOverlay.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CameraOverlay.storyboard; sourceTree = "<group>"; };
+		3969EC5C1FEC749100E2C037 /* CameraOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraOverlay.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,8 @@
 			children = (
 				3969EC481FEC3D3C00E2C037 /* AppDelegate.swift */,
 				3969EC4A1FEC3D3C00E2C037 /* ViewController.swift */,
+				3969EC5C1FEC749100E2C037 /* CameraOverlay.swift */,
+				3969EC5A1FEC5D5A00E2C037 /* CameraOverlay.storyboard */,
 				3969EC4C1FEC3D3C00E2C037 /* Main.storyboard */,
 				3969EC4F1FEC3D3C00E2C037 /* Assets.xcassets */,
 				3969EC511FEC3D3C00E2C037 /* LaunchScreen.storyboard */,
@@ -125,6 +131,7 @@
 			files = (
 				3969EC531FEC3D3C00E2C037 /* LaunchScreen.storyboard in Resources */,
 				3969EC501FEC3D3C00E2C037 /* Assets.xcassets in Resources */,
+				3969EC5B1FEC5D5A00E2C037 /* CameraOverlay.storyboard in Resources */,
 				3969EC4E1FEC3D3C00E2C037 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,6 +145,7 @@
 			files = (
 				3969EC4B1FEC3D3C00E2C037 /* ViewController.swift in Sources */,
 				3969EC491FEC3D3C00E2C037 /* AppDelegate.swift in Sources */,
+				3969EC5D1FEC749100E2C037 /* CameraOverlay.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
