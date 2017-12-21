@@ -19,23 +19,37 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vOe-Uu-uA0">
-                                <rect key="frame" x="149" y="318" width="76" height="30"/>
-                                <state key="normal" title="Take Photo"/>
+                                <rect key="frame" x="104" y="274" width="166" height="30"/>
+                                <state key="normal" title="Take Photo with Camera"/>
                                 <connections>
                                     <action selector="takePhotoButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="9G6-KK-zbo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UXD-cn-Q5O">
+                                <rect key="frame" x="73" y="305" width="229" height="30"/>
+                                <state key="normal" title="Choose Photo from Photo Library"/>
+                                <connections>
+                                    <action selector="choosePhotoButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="POj-cA-j9W"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="vOe-Uu-uA0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="IHP-7b-OIm"/>
-                            <constraint firstItem="vOe-Uu-uA0" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="kjl-NV-8F5"/>
+                            <constraint firstItem="UXD-cn-Q5O" firstAttribute="top" secondItem="vOe-Uu-uA0" secondAttribute="bottom" constant="1" id="42Z-Sx-LpY"/>
+                            <constraint firstItem="vOe-Uu-uA0" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="254" id="4wm-wj-KLA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vOe-Uu-uA0" secondAttribute="trailing" constant="105" id="72q-gq-Acd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="UXD-cn-Q5O" secondAttribute="bottom" constant="332" id="8LA-Kd-duW"/>
+                            <constraint firstItem="UXD-cn-Q5O" firstAttribute="top" secondItem="vOe-Uu-uA0" secondAttribute="bottom" constant="1" id="BuE-iM-uoH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="UXD-cn-Q5O" secondAttribute="trailing" constant="73" id="PAA-Ok-BQR"/>
+                            <constraint firstItem="vOe-Uu-uA0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="104" id="tCG-7y-nx5"/>
+                            <constraint firstItem="UXD-cn-Q5O" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="73" id="yIC-GC-7aA"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="112.8" y="32.833583208395808"/>
         </scene>
     </scenes>
 </document>

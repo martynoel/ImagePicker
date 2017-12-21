@@ -30,8 +30,22 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         present(imagePicker, animated: true, completion: nil)
     }
     
+    func choosePhotoFromPhotoLibrary() {
+        let imagePicker = UIImagePickerController()
+        
+        imagePicker.sourceType = .photoLibrary
+        imagePicker.delegate = self
+        imagePicker.allowsEditing = true
+        
+        present(imagePicker, animated: true, completion: nil)
+    }
+    
     @IBAction func takePhotoButtonPressed() {
         takePhotoWithCamera()
+    }
+    
+    @IBAction func choosePhotoButtonPressed() {
+        choosePhotoFromPhotoLibrary()
     }
     
     // MARK: Image Picker Delegates
